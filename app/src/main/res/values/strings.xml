@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Clipboard Sync</string>
+    <string name="accessibility_service_description">This service allows ClipboardSync to monitor and sync your clipboard across devices.</string>
+</resources>

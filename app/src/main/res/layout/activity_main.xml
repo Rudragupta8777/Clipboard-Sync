@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#ABABAB"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textFromPC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Waiting for clipboard..."
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:background="#EFEFEF"
+            android:textColor="#000000"
+            android:backgroundTint="#46E91E63"
+            android:scrollbars="vertical"
+            android:gravity="start|top"
+            android:overScrollMode="always"
+            android:minHeight="100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/buttonCopy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy"
+            android:backgroundTint="#E91E63"
+            app:layout_constraintTop_toBottomOf="@+id/textFromPC"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editTextToPC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Type something to send"
+            android:textColorHint="@color/black"
+            android:minHeight="100dp"
+            android:gravity="top|start"
+            android:background="#F5F5F5"
+            android:textColor="@color/black"
+            android:backgroundTint="#7E4CAF50"
+            android:padding="12dp"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCopy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:backgroundTint="#4CAF50"
+            app:layout_constraintTop_toBottomOf="@+id/editTextToPC"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
