@@ -61,3 +61,6 @@ This Android app allows seamless clipboard text sharing between your Android dev
        ".write": true
      }
    }
+
+## 🔗 Related
+- Windows Companion : [Clipboard Sync (Script)](https://github.com/Rudragupta8777/Clipboard-Sync-Script.git)
